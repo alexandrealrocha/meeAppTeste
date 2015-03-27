@@ -1,0 +1,31 @@
+<ion-side-menus enable-menu-with-back-views="false">>
+      <!-- Conteúdo -->
+      <ion-side-menu-content>
+           <!-- HEADER -->
+           <div class="bar bar-header mee-header">
+               <button class="button icon ion-navicon" ng-click="toggleLeft()"></button>
+               <h1 class="title">
+                   <div class="mee-header-title-container">
+                       <img src="http://mercadoeeventos.com.br/site/img/mobile/mee-logo.png"/>
+                       <span>O portal do Turismo Brasileiro</span>
+                   </div>
+               </h1>
+           </div>
+
+          <ion-nav-view name="menuContent"></ion-nav-view>
+
+             <div class="bar bar-footer mee-footer">
+              <div class="title">Powered By GRM</div>
+          </div>
+     </ion-side-menu-content>
+
+      <!-- Menu Slide Left -->
+      <ion-side-menu side="left">
+          <ion-header-bar class="bar-positive">
+            <h1 class="title">Menu</h1>
+          </ion-header-bar>
+          <ion-content>
+              <menu-item ng-controller='MenuController'></menu-item>
+          </ion-content>
+      </ion-side-menu>
+</ion-side-menus>
